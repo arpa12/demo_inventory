@@ -95,21 +95,22 @@ function Sidebar() {
                         location.pathname.startsWith('/Warehouse') ? 'bg-gray-700' : 'hover:bg-gray-700'
                     }`}
                 >
-                    <span>Warehouse/ Branch</span>
-                    <svg
-                        className={`w-4 h-4 transform transition-transform duration-200 ${openWarehouseDropdown ? 'rotate-90' : ''}`}
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                    >
-                        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                    </svg>
+                    {/*<span>Warehouse/ Branch</span>*/}
+                    <Link to="/Warehouse" className={`px-4 py-2 rounded text-sm ${location.pathname === '/Warehouse' ? 'bg-gray-700' : 'hover:bg-gray-700'}`}>Warehouse/ Branch</Link>
+                    {/*<svg*/}
+                    {/*    className={`w-4 h-4 transform transition-transform duration-200 ${openWarehouseDropdown ? 'rotate-90' : ''}`}*/}
+                    {/*    fill="currentColor"*/}
+                    {/*    viewBox="0 0 20 20"*/}
+                    {/*>*/}
+                    {/*    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />*/}
+                    {/*</svg>*/}
                 </button>
 
-                <div className={`ml-4 flex flex-col gap-1 transition-all duration-200 ease-in-out overflow-hidden ${
-                    openWarehouseDropdown ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                }`}>
-                    <Link to="/Warehouse" className={`px-4 py-2 rounded text-sm ${location.pathname === '/Warehouse' ? 'bg-gray-700' : 'hover:bg-gray-700'}`}>Add Warehouse</Link>
-                </div>
+                {/*<div className={`ml-4 flex flex-col gap-1 transition-all duration-200 ease-in-out overflow-hidden ${*/}
+                {/*    openWarehouseDropdown ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'*/}
+                {/*}`}>*/}
+                {/*    <Link to="/Warehouse" className={`px-4 py-2 rounded text-sm ${location.pathname === '/Warehouse' ? 'bg-gray-700' : 'hover:bg-gray-700'}`}>Add Warehouse</Link>*/}
+                {/*</div>*/}
 
                 {/* Transfer Dropdown */}
                 <button
